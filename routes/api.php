@@ -19,6 +19,8 @@ Route::group(['middleware' => 'auth:api'], function() {
     Route::post('details', 'API\UserController@details');
 });
 
+Route::post('/trip', 'TripController@create');
+
 //
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
 //    return $request->user();
